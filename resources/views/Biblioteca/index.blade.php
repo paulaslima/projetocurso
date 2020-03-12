@@ -5,36 +5,21 @@
 @endpush
 
 @section('conteudo')
-<div class="container" align="center">
-    <form action='/action_page.php'>
-        <div class="form-group">
-            <label>
-                Nome:
-            </label></br>
-            <input class="form-control" type="text"> </br>
-            <label>
-                Endereço:
-            </label></br>
-            <input class="form-control" type="text"> </br>
-            <div class="row">
-            <div class="col-md-6">
-                <label>
-                    CPF:
-                </label></br>
-                <input id="cpf" name="cpf" type="text" class='cpf-mask form-control'> <br>
-                <!-- <button type="submit" class="btn btn-primary">Enviar</button> -->
-                </div>
-            </div>
-        </div>
-    </form>
+<header class="w3-panel w3-center w3-opacity" style="padding:50px 16px">
+  <h1 class="w3-xlarge">ESTANTE VIRTUAL</h1>
+
+
+<div class="container" style="width: 25%">
+           <BR><BR>
+           <h6>Realize seu login para acessar sua estante!</h6>
+           <a href="" class="btn btn-basic btn-block btn-outline-secondary">Login</a>
+           <h6>Novo por aqui? <br>Faça seu cadastro para começar sua estante!</h6>
+           <a href="" class="btn btn-basic btn-block btn-outline-secondary">Cadastrar</a> 
     </div>
     @endsection
     @push('scripts')
     
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+  
 
 <script>
         $(".cpf-mask").mask('000.000.000-00');

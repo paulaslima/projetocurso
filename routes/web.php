@@ -15,3 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/biblioteca', 'TesteController@index');
+
+Route::get('/cadastro', 'TesteController@cadastro');

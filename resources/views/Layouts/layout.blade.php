@@ -1,51 +1,73 @@
-<!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<style>
-body,h1 {font-family: "Raleway", Arial, sans-serif}
-h1 {letter-spacing: 6px}
-.w3-row-padding img {margin-bottom: 6px}
-</style>
-<body>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
-
-<!-- Header -->
-<header class="w3-panel w3-center w3-opacity" style="padding:50px 16px">
-  <h1 class="w3-xlarge">SISTEMA DE CADASTRO</h1>
+<!doctype html>
+<html lang="pt-br" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   
-  
-  <div class="w3-padding-32">
-    <div class="w3-bar w3-border">
-      <a href="#" class="w3-bar-item w3-button">Home</a>
-      <a href="#" class="w3-bar-item w3-button w3-light-grey">Login</a>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+
+    <title>Template para sticky footer e navbar fixa, usando Bootstrap.</title>
+
+    <!-- Estilos customizados para esse template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+
+  <body class="d-flex flex-column h-100">
+
+    <header>
+      <!-- Navbar fixa -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Navbar fixa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Desativado</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Pesquisa" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Começa o conteúdo da página -->
+    <main role="main" class="flex-shrink-0">
       
-    </div>
-  </div>
-</header>
-<dv class="container">
-@yield('conteudo')
-  </div>
-<!-- End Page Content -->
-</div>
+    @yield('conteudo')
+    
+   </main>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">Projeto Curso Senai. </span>
+      </div>
+    </footer>
 
-</body>
+    <!-- Principal JavaScript do Bootstrap
+    ================================================== -->
+    <!-- Foi colocado no final para a página carregar mais rápido -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
 </html>

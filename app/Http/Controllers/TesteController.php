@@ -11,4 +11,8 @@ class TesteController extends Controller
 
     }
 
+    public function cadastro(){
+      return view ('Biblioteca/cadastro');
+    }
+
 }
