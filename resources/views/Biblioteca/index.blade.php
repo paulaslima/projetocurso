@@ -22,7 +22,7 @@
                     CPF:
                 </label></br>
                 <input id="cpf" name="cpf" type="text" class='cpf-mask form-control'> <br>
-                <button type="submit" class="btn btn-warning">Enviar</button>
+                <!-- <button type="submit" class="btn btn-primary">Enviar</button> -->
                 </div>
             </div>
         </div>
