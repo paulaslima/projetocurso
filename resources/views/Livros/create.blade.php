@@ -11,24 +11,6 @@
 
 <div class="container w3-left" style="padding-left:120px">
            <BR><BR>
-           <!--<form>
-
-      <label>Título:</label> </br>
-      <input type="text"> </br>
-
-      <label>Autor:</label> </br>
-      <input type="text"> </br>
-
-      <label>Editora:</label> </br>
-      <input type="text"> </br>
-
-      <label>Gênero:</label> </br>
-      <input type="text"> </br>
-
-      <label>Formato:</label>
-
-      </form> -->
-
       <form>
           <div class="form-group">
                 <label >Título : </label>
@@ -62,7 +44,5 @@
     
   
 
-<script>
-        $(".cpf-mask").mask('000.000.000-00');
-</script>
+
 @endpush

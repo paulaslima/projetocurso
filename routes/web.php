@@ -11,7 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::get('/', 'Livros\LivrosController@home');
+Route::get('/telaLogin', 'Livros\LivrosController@controle');
+
+Route::resource('livros', 'Livros\LivrosController');
 
