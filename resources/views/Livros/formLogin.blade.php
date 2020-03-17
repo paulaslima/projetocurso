@@ -6,12 +6,9 @@
 
 @section('conteudo')
 <header class="w3-panel w3-center w3-opacity" style="padding:50px 16px">
-  <h3 class="w3-xlarge">LOGIN</h3>
+  <h3 >LOGIN</h3>
 </header>
 
- <!--        <div class="container" style="width: 25%">
-          ÁREA DE CONTROLE
-            </div> -->
 
             <div class="container" style="width: 25%">
           <form class="form-signin" method="POST" action="{{route('admin.login.do')}}">

@@ -25,26 +25,36 @@
     <header>
       <!-- Navbar fixa -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Navbar fixa</a>
+        <a class="navbar-brand" href="{{route('home')}}">iShelf</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(atual)</span></a>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Contato</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Desativado</a>
-            </li>
+
           </ul>
+
           <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Pesquisa" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+
+          <?php
+						if(Auth::check() === true){					
+						
+					?>
+           <a href="{{ route('admin.logout') }}" class="btn btn-secondary btn-block" type="submit">Logout</a> 
+				<?php } else { ?>
+          <a href="{{ route('admin') }}" class="btn btn-secondary btn-block" type="submit">Login</a> 
+                <?php } ?>
+
           </form>
+
+      
         </div>
       </nav>
     </header>
