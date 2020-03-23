@@ -9,12 +9,23 @@
   
 </header>
 
-<div class="container">
-  <div class="w3-container w3-light-gray">
-    <h4>O que fazer a seguir?</h4>
-    <p></p>
+<div class="container" style="width: 30%">
+          <div class="card">
+                  <div class="card-header">
+                  <h4>Bem-vindo(a)!</h4>
+                  </div>
+              <div class="card-body">
+                  <p>Use o menu abaixo para navegar.</p>
+                <div>
+                <a href="{{route('livro.index')}}" class="btn btn-basic btn-block btn-outline-secondary">Ver o que tem na minha estante</a>
+                <a href="{{route('livro.create')}}" class="btn btn-basic btn-block btn-outline-secondary">Adicionar mais um livro</a>
+                </div> <br>
+               </div>
+               <div class="card-footer text-right">
+                <a href="{{ url()->previous() }}" class="btn btn-secondary">Voltar</a> 
+              </div> <!--fecha o footer--> 
+          </div>
   </div>
-</div>
 
 
 

@@ -9,7 +9,7 @@ class AuthController extends Controller
 {
     public function dashboard(){
 
-        if(Auth::check() === true) {
+        if(Auth::check()) {
             return view('Livros.dashboard');
         }
         return redirect()->route('admin.login');
@@ -34,6 +34,6 @@ class AuthController extends Controller
     public function logout() {
 
         Auth::logout();
-        return redirect()->route('admin');
+        return redirect()->route('home');
     }
 }
