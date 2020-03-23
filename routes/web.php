@@ -14,6 +14,7 @@
 Route::get('/', 'Livros\LivrosController@home')->name('home');
 Route::get('/home', 'Livros\LivrosController@home')->name('home');
 Route::get('/sobre', 'Livros\LivrosController@sobre')->name('sobre');
+Route::get('/contato', 'Livros\LivrosController@contato')->name('contato');
 
 Auth::routes();
 

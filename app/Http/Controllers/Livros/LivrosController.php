@@ -22,6 +22,10 @@ class LivrosController extends Controller
         return view('Livros.sobre');
     }
 
+    public function contato() {
+        return view('Livros.contato');
+    }
+
 
     public function create() {
         return view ('Livros/create');

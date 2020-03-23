@@ -26,9 +26,14 @@ class AuthController extends Controller
         'email' => $request->email,
         'password' => $request->password,
         ];
-        Auth::attempt($credentials);
+        if(Auth::attempt($credentials)){
+            return redirect()->route('admin');
+        } else {
+            return redirect()->back()->withInput()->withErrors(['Os dados informados não conferem!']);
+        }
+        
 
-        return redirect()->route('admin');
+        
     }
 
     public function logout() {

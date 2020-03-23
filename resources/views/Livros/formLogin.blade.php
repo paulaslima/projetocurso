@@ -12,6 +12,15 @@
 
       <div class="container" style="width: 25%">
             <div class="card">
+            <div class="card-header">
+            @if($errors->all())
+              @foreach($errors->all() as $error)
+              <div class="alert alert-danger" role="alert">
+                {{$error}}
+              </div>
+              @endforeach
+            @endif
+            </div>
               <div class="card-body">    
                   <form class="form-signin" method="POST" action="{{route('admin.login.do')}}">
                 @csrf

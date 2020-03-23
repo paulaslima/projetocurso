@@ -27,8 +27,8 @@ funcionalidades a serem implementadas até mesmo para fins de aprendizado própr
 
 
 <br><br><br><br>
-Por Paula Sacramento de Lima.
-
+Por Paula Sacramento de Lima.<br><br>
+<a href="{{ url()->previous() }}" class="btn btn-secondary">Voltar</a> 
 </div>
 
 @endsection

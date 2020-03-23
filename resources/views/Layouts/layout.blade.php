@@ -36,7 +36,7 @@
               <a class="nav-link" href="{{route('sobre')}}">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
+              <a class="nav-link" href="{{route('contato')}}">Contato</a>
             </li>
 
           </ul>
