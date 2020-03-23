@@ -14,7 +14,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 
 
-    <title>Template para sticky footer e navbar fixa, usando Bootstrap.</title>
+    <title>iShelf</title>
 
     <!-- Estilos customizados para esse template -->
     <link href="sticky-footer-navbar.css" rel="stylesheet">
